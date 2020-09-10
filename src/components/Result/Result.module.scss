@@ -1,0 +1,33 @@
+.container {
+  height: 100px;
+  border-bottom: 1px solid blue;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: hsl(231, 43%, 36%);
+  }
+
+  .img {
+    height: 80px;
+    width: 80px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .info {
+    flex: 1 0 auto;
+
+    .text {
+      padding: 10px;
+      color: white;
+      font-size: 16px;
+    }
+  }
+}
